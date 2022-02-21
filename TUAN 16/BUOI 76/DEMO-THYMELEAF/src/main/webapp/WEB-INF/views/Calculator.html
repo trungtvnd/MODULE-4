@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Operator</th>
+        <th>Example</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>and</td>
+        <td>True and False</td>
+        <td th:text="true and false"></td>
+    </tr>
+    <tr>
+        <td>or</td>
+        <td>True or False</td>
+        <td th:text="true or false"></td>
+    </tr>
+    <tr>
+        <td>!</td>
+        <td>!True</td>
+        <td th:text="!true"></td>
+    </tr>
+    <tr>
+        <td>not</td>
+        <td>not false</td>
+        <td th:text="not false"></td>
+    </tr>
+</table>
+</body>
+</html>

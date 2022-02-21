@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/product" method="post">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><label><input type="text" name="name" value="${product.getName()}"></label></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
