@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        List Product
+    </title>
+    <style th:replace="/layout :: css"></style>
+</head>
+<body>
+<h1>Products</h1>
+<h2 th:class="notify" th:if="${message} != null">
+    <span th:text="${message}"></span>
+</h2>
+<p>
+    <a th:href="@{/product/create}">Create New Product</a>
+</p>
+<div style="float:right;">
+    <form method="get">
+        <label>
+            <input  placeholder="search" th:name="key" th:value="${key}">
+        </label><br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</div>
+<div th:if="${products.isEmpty() == false}">
+    <table id="products">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product,productState : ${products}">
+            <td th:text="${product.getName()}"></td>
+            <td th:text="${product.getPrice()}"></td>
+            <td th:text="${product.getDescription()}"></td>
+            <td><a th:href="@{/product/edit/{id}(id=${product.getId()})}">Edit</a></td>
+            <td><a th:href="@{/product/delete/{id}(id=${product.getId()})}"
+                   onclick="return confirm('Are you sure to delete this Product?')">Delete</a></td>
+            <td><a th:href="@{/product/view/{id}(id=${product.getId()})}">View</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
