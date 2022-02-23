@@ -18,13 +18,12 @@
     <a th:href="@{/product/create}">Create New Product</a>
 </p>
 <div style="float:right;">
-    <form method="get">
-        <label>
-            <input  placeholder="search" th:name="key" th:value="${key}">
-        </label><br>
-        <button type="submit" value="Submit">Submit</button>
+    <form action="">
+        <label for=""></label><input type="text" th:name="key" id="">
+        <button><<a th:href="@{/product/search/{key}}">Search</a></button>
     </form>
 </div>
+
 <div th:if="${products.isEmpty() == false}">
     <table id="products">
         <thead>

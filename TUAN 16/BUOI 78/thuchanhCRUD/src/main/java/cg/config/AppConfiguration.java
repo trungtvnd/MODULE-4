@@ -1,7 +1,7 @@
 package cg.config;
 
 import cg.service.IProductService;
-import cg.service.impl.ProductServiceImpl;
+
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

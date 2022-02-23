@@ -14,9 +14,6 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
-import service.IProductService;
-import service.impl.DemoServiceImpl;
-import service.impl.ProductServiceImpl;
 
 
 @Configuration
@@ -59,10 +56,7 @@ import service.impl.ProductServiceImpl;
             return templateResolver;
         }
 
-        @Bean
-        public IProductService productService() {
-            return new ProductServiceImpl();
-        }
+
 
 //        @Bean
 //        public IProductService demoService() {

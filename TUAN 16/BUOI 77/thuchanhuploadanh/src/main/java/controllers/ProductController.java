@@ -43,7 +43,7 @@ public class ProductController {
         MultipartFile multipartFile = productForm.getImage();
         String fileName = multipartFile.getOriginalFilename();
         try {
-            FileCopyUtils.copy(productForm.getImage().getBytes(), new File(fileUpload + fileName));
+            FileCopyUtils.copy(productForm.getImage().getBytes(), new File("fileUpload" + fileName));
         } catch (IOException ex) {
             ex.printStackTrace();
         }

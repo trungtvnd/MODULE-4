@@ -5,7 +5,7 @@ import service.ICategoryService;
 
 import java.util.ArrayList;
 
-public class CategoryService implements ICategoryService {
+public class CategoryServiceImpl implements ICategoryService {
 
     private static final ArrayList<Category> categories;
     private static int id_auto = 0;

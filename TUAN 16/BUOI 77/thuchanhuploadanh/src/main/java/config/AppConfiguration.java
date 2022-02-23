@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -24,6 +25,7 @@ import java.io.IOException;
 @Configuration
     @EnableWebMvc
     @ComponentScan("controllers")
+@PropertySource("classpath:upload_file.properties")
     public class AppConfiguration extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     @Value("${file-upload}")
     private String fileUpload;

@@ -13,7 +13,7 @@
 </head>
 <body>
 <h3>Home</h3>
-<form:form action="login" method="post" modelAttribute="login">
+<form:form action="login" method="post" modelAttribute="Login">
 
         <legend>
             login
