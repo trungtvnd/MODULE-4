@@ -9,7 +9,7 @@ public interface IProductService {
 
     Product create(Product product);
 
-    Product delete(int id);
+    void delete(int id);
 
     Product selectById(int id);
 
