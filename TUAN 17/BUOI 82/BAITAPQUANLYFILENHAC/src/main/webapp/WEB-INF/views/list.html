@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        List Product
+    </title>
+    <style th:replace="/layout :: css"></style>
+</head>
+<body>
+<h1>Songs</h1>
+
+<p>
+    <a href="" th:href="@{/song/create}">Create new Product</a>
+</p>
+<div th:if="${songs.isEmpty() == false}">
+    <p>
+      
+    </p>
+    <table id="products">
+        <div style="float:right;">
+            <form th:action="@{/song}" method="get">
+                <label>
+                    <input type="text" name="search">
+                    <span><button type="submit">Search</button></span>
+                </label>
+            </form>
+        </div>
+
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>File</th>
+            <th colspan="3">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="song:${songs}">
+            <td th:text="${song.getName()}"></td>
+            <td th:text="${song.category.getName()}"></td>
+         <td>  <audio controls >
+             <source th:src="@{'/music/'+ ${song.getFile()}}" src="">
+         </audio></td>
+            <td><a th:href="@{/song/edit/{id}(id=${song.getId()})}">Edit</a></td>
+            <td><a th:href="@{/song/delete/{id}(id=${song.getId()})}"
+                   onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')">Delete</a></td>
+            <td><a th:href="@{/song/view/{id}(id=${song.getId()})}">View</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!--<div>-->
+<!--    <a th:href="@{'/song'(page=${songs.number - 1})}" th:if="${songs.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${songs.number + 1}"></span>/<span th:text="${songs.totalPages}"></span>-->
+<!--    <a th:href="@{'/song'(page=${songs.number + 1})}" th:if="${songs.hasNext()}">Next</a>-->
+<!--</div>-->
+<div>
+    <a th:href="@{/song(page=${songs.number - 1},search=${search})}"
+       th:if="${songs.hasPrevious()}"><span>Previous</span></a>
+    <span th:text="${songs.number + 1} + '/' + ${songs.totalPages}"></span>
+    <a th:href="@{/song(page=${songs.number + 1},search=${search})}"
+       th:if="${songs.hasNext()}"><span>Next</span></a>
+</div>
+
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

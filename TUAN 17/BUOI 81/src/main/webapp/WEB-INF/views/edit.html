@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        Product
+    </title>
+    <style th:replace="/layout :: css"></style>
+</head>
+<body>
+<!--<h2 th:class="notify" th:if="${message!=null}">-->
+<!--    <span th:text="${message}"></span>-->
+<!--</h2>-->
+<th:block th:if="${errorMessage}">
+    <p style="color: red" class="error" th:text="${errorMessage}"></p>
+</th:block>
+<form id="form" action="" th:action="@{/student/edit/{id}(id=${student.id})}" th:object="${student}" method="post">
+    <label>
+        <input type="hidden" name="id" th:field="*{id}">
+    </label>
+
+    <label>Name
+        <input type="text" name="name" th:field="*{name}">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+    </label>
+    <label>Age
+        <input type="text" name="age" th:field="*{age}">
+    </label>
+    <label>Phone Number
+        <input type="text" name="phoneNumber" th:field="*{phoneNumber}">
+    </label>
+
+    <label>Address
+        <input type="text" name="address" th:field="*{address}">
+    </label>
+    <label>Avg Point
+        <input type="text" th:field="*{avgPoint}">
+    </label>
+    <label>ClassRoom
+        <select name="classRoom" id="classRoom" th:field="*{classRoom}">
+            <option th:each="c:${classRoomList}" th:value="${c.id}" th:text="${c.name}"></option>
+        </select>
+    </label>
+    <br>
+    <button type="submit">Edit</button>
+</form>
+<p><a th:href="@{/student}">Back to list</a></p>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

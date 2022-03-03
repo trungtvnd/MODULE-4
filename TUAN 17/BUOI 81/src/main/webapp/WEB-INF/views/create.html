@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        Student
+    </title>
+    <style th:replace="/layout :: css"></style>
+</head>
+<body>
+<!--<h2 th:class="notify" th:if="${message} != null">-->
+<!--    <span th:text="${message}"></span>-->
+<!--</h2>-->
+<!--<th:block th:if="${errorMessage}">-->
+<!--    <p style="color: red" class="error" th:text="${errorMessage}"></p>-->
+<!--</th:block>-->
+<form id="form" th:action="@{/student/create}" th:object="${student}" method="post" >
+    <label >Name
+        <input type="text" name="name" th:field="*{name}">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+    </label>
+    <label >Age
+        <input type="text" name="age" th:field="*{age}">
+        <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span>
+    </label>
+    <label >PhoneNumber
+        <input type="text" name="phoneNumber" th:field="*{phoneNumber}">
+        <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+    </label>
+    <label >Address
+        <input type="text" name="address" th:field="*{address}">
+    </label>
+    <label >Avg Point
+        <input type="text" name="avgPoint" th:field="*{avgPoint}"/>
+        <span th:if="${#fields.hasErrors('avgPoint')}" th:errors="*{avgPoint}"></span>
+    </label>
+    <label >ClassRoom
+        <select name="" id="" th:field="*{classRoom}">
+            <option value="" th:each="c:${classRoomList}" th:value="${c.getId()}" th:text="${c.getName()}"></option>
+        </select>
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<p><a th:href="@{/student}">Back to list</a></p>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

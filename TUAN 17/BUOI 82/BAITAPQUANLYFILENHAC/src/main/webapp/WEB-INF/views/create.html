@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        Product
+    </title>
+    <style th:replace="/layout :: css"></style>
+</head>
+<body>
+<!--<h2 th:class="notify" th:if="${message} != null">-->
+<!--    <span th:text="${message}"></span>-->
+<!--</h2>-->
+<!--<th:block th:if="${errorMessage}">-->
+<!--    <p style="color: red" class="error" th:text="${errorMessage}"></p>-->
+<!--</th:block>-->
+<form id="form" th:action="@{/song/create}" th:object="${song}" method="post" enctype="multipart/form-data">
+    <label >Name
+        <input type="text" name="name" th:field="*{name}">
+    </label>
+    <label >File
+        <input type="file" name="file" th:field="*{multipartFile}">
+    </label>
+    <label >Category
+        <select name="" id="" th:field="*{category}">
+            <option value="" th:each="c:${categories}" th:value="${c.getId()}" th:text="${c.getName()}"></option>
+        </select>
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<p><a th:href="@{/song}">Back to list</a></p>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
