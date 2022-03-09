@@ -1,8 +1,6 @@
 package cg.config;
 
-import cg.formatter.CategoryFormatter;
-import cg.formatter.LocalDateFormatter;
-import cg.service.CategoryService;
+
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -42,7 +40,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @EnableSpringDataWebSupport
 @EnableJpaRepositories("cg.repository")
-@PropertySource("classpath:file_upload.properties")
+
 public class AppConfiguration extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     private ApplicationContext applicationContext;
 
@@ -140,10 +138,5 @@ public class AppConfiguration extends WebMvcConfigurerAdapter implements Applica
     }
 
     //formatter
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
-        LocalDateFormatter localDateFormatter = new LocalDateFormatter("MM/dd/yyyy");
-        registry.addFormatter(localDateFormatter);
-    }
+
 }
