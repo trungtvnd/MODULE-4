@@ -22,9 +22,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests().antMatchers("/user**").hasRole("USER")
                 .and()
                 .authorizeRequests().antMatchers("/admin**").hasRole("ADMIN")
-                .and().formLogin()
+                .and().formLogin().successHandler(new CustomSuccessHandler())
                 .and().logout()
-                .and().csrf().disable();
+                .and().csrf().disable()
+                .exceptionHandling().accessDeniedPage("/accessDenied");
+
     }
 
     @Override

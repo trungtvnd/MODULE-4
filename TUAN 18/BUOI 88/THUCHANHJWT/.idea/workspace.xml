@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c0fec21-ca8a-4d66-ae0a-aa71c5767630" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/THUCHANHCOOKIES.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/SecurityApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/controllers/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/webapp/WEB-INF/views/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/webapp/WEB-INF/views/error.404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/webapp/WEB-INF/views/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/ANIMATION1/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/THUCHANHANIMATION/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/controllers/SmartphoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/java/com/codegym/service/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/phone-manager/src/main/webapp/WEB-INF/views/phones/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/untitled/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/untitled/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/untitled/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 85/untitled/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BUOI 87/THUCHANHLOGIN/.idea/THUCHANHLOGIN.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/AppInititializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controllers/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/rest/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/rest/JWTAtuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/rest/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/config/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/config/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/model/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/model/UserPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/repository/IRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/java/com/codegym/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHJWT2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/config/CustomerSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/controllers/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/java/com/codegym/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/webapp/WEB-INF/views/access-denied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/webapp/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/webapp/WEB-INF/views/dba.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../THUCHANHPHANQUYEN/src/main/webapp/WEB-INF/views/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHCOOKIES/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/config/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 83/THUCHANHTHEMSPVAOGIOHANG/src/main/java/cg/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TUAN 17/BUOI 84/THUCHANHQLKHRESFUL/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="263kOrtRTuXGkev187cppXQ3V66" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : THUCHANHJWT-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="af5ad861-92c0-41c0-874e-6e2c23474ab1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54790" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : THUCHANHJWT-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c0fec21-ca8a-4d66-ae0a-aa71c5767630" name="Changes" comment="" />
+      <created>1646659630071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646659630071</updated>
+      <workItem from="1646659631691" duration="1926000" />
+      <workItem from="1646703073162" duration="5753000" />
+      <workItem from="1646727451026" duration="303000" />
+      <workItem from="1646730565859" duration="717000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

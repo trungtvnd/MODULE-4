@@ -36,7 +36,8 @@ public class ProductController {
     private IProductService productService;
 
     @GetMapping
-    public ModelAndView display(@SortDefault(sort = {"name", "price"}, direction = Sort.Direction.ASC)@PageableDefault(3) Pageable pageable
+    public ModelAndView display(@SortDefault(sort = {"name", "price"},
+            direction = Sort.Direction.ASC)@PageableDefault(3) Pageable pageable
             , @RequestParam("search")Optional<String> key) {
         ModelAndView modelAndView = new ModelAndView("list");
 

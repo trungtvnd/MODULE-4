@@ -24,6 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private AppUserService userService;
     @Autowired
     private JwtAuthenticationFilter jwtAuthenticationFilter;
+
     @Bean(BeanIds.AUTHENTICATION_MANAGER)
     @Override
     public AuthenticationManager authenticationManager() throws Exception {
@@ -41,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
        http.csrf().ignoringAntMatchers("/**");
        http.authorizeRequests()
                .antMatchers("/", "/login", "/register").permitAll()
-               .anyRequest().authenticated()
+               .anyRequest().authenticated().and().formLogin()
                .and().csrf().disable();
        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                .exceptionHandling();
@@ -52,6 +53,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userService).passwordEncoder(NoOpPasswordEncoder.getInstance());
+        auth.userDetailsService(userService).passwordEncoder(passwordEncoder());
     }
 }

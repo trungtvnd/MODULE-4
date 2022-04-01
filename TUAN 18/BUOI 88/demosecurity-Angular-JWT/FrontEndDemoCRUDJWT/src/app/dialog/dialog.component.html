@@ -1,0 +1,56 @@
+<h2 mat-dialog-title> Add Product Form</h2>
+<div mat-dialog-content>
+  <form [formGroup]="productForm" (ngSubmit)="createProduct()" >
+    <mat-form-field appearance="legacy">
+      <mat-error *ngIf="!productForm.get('name')?.value
+        && productForm.get('name')?.touched">Not blank</mat-error>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Price</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="price">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Quantity</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="quantity">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let category of categories" value="{{category.id}}">
+          {{ category.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <label ><h4>Description</h4></label>
+    <mat-radio-group   class="example-radio-group" formControlName="description">
+      <mat-radio-button *ngFor="let des of description" [value]="des">
+        {{ des }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div>
+    <label><h4>Image</h4></label>
+      <input type="file"
+                          id="file"
+                          #userPhoto
+                          (change)="onFileSelected($event)"
+                          name="image"
+                          autocomplete="off"
+      />
+      <img [src]="fb" alt="Chưa chọn ảnh" style="width: 100px; height: 100px; border-radius: 100%">
+    </div>
+    <div mat-dialog-actions [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+      <button mat-raised-button color="primary" style="margin-left: 8px"
+              [disabled]="productForm.invalid || fb == ''">Save</button>
+    </div>
+  </form>
+
+</div>

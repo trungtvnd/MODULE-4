@@ -1,19 +1,21 @@
 package com.codegym.vn.controller;
 
 import com.codegym.vn.model.AppUser;
-import com.codegym.vn.service.AppUserService;
 import com.codegym.vn.service.IAppUserService;
 import com.codegym.vn.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @CrossOrigin("*")
@@ -29,10 +31,9 @@ public class LoginApiController {
     private PasswordEncoder passwordEncoder;
 
     @PostMapping("/login")
-    public String login(@RequestBody AppUser appUser) {
+    public ResponseEntity<String> login(@RequestBody AppUser appUser, HttpServletRequest request) {
         //lay user va pasword de xac thuc
         //Tao ra token
-
         try {
             // Tạo ra 1 đối tượng Authentication.
             Authentication authentication = authenticationManager.authenticate(
@@ -40,16 +41,21 @@ public class LoginApiController {
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
             String token = jwtService.generateTokenLogin(authentication);
-            return token;
+            return new ResponseEntity<>(token, HttpStatus.OK);
         } catch (Exception e) {
-            return e.getMessage();
+
         }
+        return null;
     }
 
-    @GetMapping("/register")
+    @PostMapping("/register")
     public void register(@RequestBody AppUser appUser) {
         String password = passwordEncoder.encode(appUser.getPassword());
         appUser.setPassword(password);
         appUserService.save(appUser);
+    }
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
     }
 }
